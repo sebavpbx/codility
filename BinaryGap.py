@@ -1,3 +1,5 @@
+
+
 def solution(A):
 
     numbers = str(bin(A))[2:]
