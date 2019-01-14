@@ -1,5 +1,3 @@
-#!/usr/local/bin/python2.7
-
 def solution(A):
 
     numbers = str(bin(A))[2:]
