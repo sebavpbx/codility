@@ -20,6 +20,8 @@ def solution(A, B, K):
                 elif difference == K:
                     return 2
                 else:
-                    
+                    print('K=A, diff > K')
+            else:
+                print('K!=A')
             
 print(solution(4, 14, 12))
