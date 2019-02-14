@@ -1,11 +1,17 @@
 
 
 def solution(A, B, K):
-    print(A, B, K)
+    if A == 0:
+        addition = 1
+    else:
+        addition = 0
     difference = B - A
     if K > B:
-        return 0
-    elif K == B:
+        if A % K == 0:
+            return 1
+        else:
+            return 0
+    elif K == B or ((K == A) and (K == B)):
         return 1
     else:
         if difference == 0:
@@ -20,8 +26,16 @@ def solution(A, B, K):
                 elif difference == K:
                     return 2
                 else:
-                    print('K=A, diff > K')
+                    return 1 + int(difference / K)
+            elif K > A:
+                return 1 + int((B - K) / K) + addition
             else:
-                print('K!=A')
+                if A % K == 0:
+                    return int(difference / K + 1) + addition
+                else:
+                    if B % K == 0:
+                        return int(difference / K + 1) + addition
+                    else:
+                        return int(difference / K) + addition
             
-print(solution(4, 14, 12))
+print(solution(1, 1, 1))
