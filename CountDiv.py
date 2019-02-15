@@ -1,11 +1,14 @@
 
 
 def solution(A, B, K):
+
     if A == 0:
         addition = 1
     else:
         addition = 0
+
     difference = B - A
+
     if K > B:
         if A % K == 0:
             return 1
