@@ -18,7 +18,7 @@ def solution(A, B, K):
     if K >= B:
         return amod + bmod
     else:
-        return None
+        return int((difference - 1) / K) + amod + bmod 
 
 print(solution(0,1,1))
 print(solution(1,1,1))
@@ -27,3 +27,12 @@ print(solution(0,2,3))
 print(solution(2,2,1))
 print(solution(9,9,1))
 print(solution(1,9,1))
+print(solution(1,9,2))
+print(solution(2,10,2))
+print(solution(2,9,1))
+print(solution(3,9,3))
+print(solution(4,10,3))
+print(solution(5,11,3))
+print(solution(3,9,2))
+
+
