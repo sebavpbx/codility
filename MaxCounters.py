@@ -1,7 +1,7 @@
 
 
 def solution(N, A):
-    counters = [0]*N
+    counters = [0] * N
     maximum = 0
     for element in A:
         if element > N:
@@ -12,4 +12,8 @@ def solution(N, A):
                 maximum = counters[element - 1]
     return counters
 
-print(solution(5, [1,2,3,1,6,6]))
+def solution1(N, A):
+    counters = [0] * N
+    
+
+print(solution(5, [1,2,3,1,6,6,1,2,1,1,3,4,5,6,6,1,2,2,2,3,4,5,5,5,5,6,6,1]))
